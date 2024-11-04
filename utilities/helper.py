@@ -4,16 +4,12 @@ from os.path import dirname as up
 sys.path.append(os.path.abspath(os.path.join(up(__file__), os.pardir)))
 
 import re
-from langchain_openai import ChatOpenAI
-from langchain_groq import ChatGroq
-from langchain_google_genai import ChatGoogleGenerativeAI
 
 from langchain_community.document_loaders import PDFPlumberLoader
-from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
-from langchain_core.prompts import PromptTemplate
+from langchain_community.document_loaders import WebBaseLoader
 from typing import Dict
 
-from langchain_community.document_loaders import WebBaseLoader
+from scoutsense_recruit import CandidateEvaluation
 
 from urllib.parse import urlparse
 from typing import Union, Tuple, List
@@ -23,14 +19,11 @@ from dotenv import load_dotenv
 
 _ = load_dotenv()
 
+from openai import OpenAI
+
 from utilities.constants import (
-    GEMINI_1_5_PRO,
-    GEMINI_1_5_PRO_0827,
     GPT_4_O,
     GPT_4_O_MINI,
-    GROQ_LLAMA_3_1_70B,
-    GROQ_LLAMA_3_1_70B_VERSATILE,
-    GROQ_MIXTRAL_8_7B,
 )
 
 
@@ -49,32 +42,19 @@ def extract_pdf_text(file_path: str) -> str:
     return document
 
 
-def process_with_llm(model: str, prompt_template: PromptTemplate, input_dict: Dict):
-    """
-    Process input using specified LLM model.
-
-    Args:
-        model (str): Name of the LLM model to use
-        prompt_template (PromptTemplate): Template for the prompt
-        input_dict (Dict): Dictionary containing input parameters
-
-    Returns:
-        Dict: Model's output in JSON format
-    """
-    if model in [GEMINI_1_5_PRO, GEMINI_1_5_PRO_0827]:
-        llm = ChatGoogleGenerativeAI(model=model)
-    elif model in [GPT_4_O, GPT_4_O_MINI]:
-        llm = ChatOpenAI(model=model)
-    elif model in [
-        GROQ_LLAMA_3_1_70B_VERSATILE,
-        GROQ_LLAMA_3_1_70B,
-        GROQ_MIXTRAL_8_7B,
-    ]:
-        llm = ChatGroq(model=model)
-
-    chain = prompt_template | llm | JsonOutputParser()
-    result = chain.invoke(input_dict)
-    return result
+def process_with_llm(model: str, prompt: str, input_dict: Dict):
+    if model in [GPT_4_O, GPT_4_O_MINI]:
+        client = OpenAI()
+        completion = client.beta.chat.completions.parse(
+            temperature=0.0,
+            model=model,
+            messages=[{"role": "system", "content": prompt.format(**input_dict)}],
+            response_format=CandidateEvaluation,
+        )
+        result = completion.choices[0].message.parsed
+        return result.model_dump()
+    else:
+        return None
 
 
 def clean_text(text: str) -> str:

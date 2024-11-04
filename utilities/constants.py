@@ -1,7 +1,2 @@
-GEMINI_1_5_PRO = "gemini-1.5-pro"
-GEMINI_1_5_PRO_0827 = "gemini-1.5-pro-0827"
 GPT_4_O = "gpt-4o"
 GPT_4_O_MINI = "gpt-4o-mini"
-GROQ_LLAMA_3_1_70B_VERSATILE = "llama-3.1-70b-versatile"
-GROQ_LLAMA_3_1_70B = "llama3-70b-8192"
-GROQ_MIXTRAL_8_7B = "mixtral-8x7b-32768"
