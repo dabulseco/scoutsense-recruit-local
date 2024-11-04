@@ -1,0 +1,392 @@
+{
+  "personal_information": {
+    "full_name": "Isham Rashik",
+    "contact": {
+      "email": "d.isham.993@gmail.com",
+      "phone": "+971507832215",
+      "location": "Dubai, UAE"
+    },
+    "online_presence": {
+      "linkedin": "https://www.linkedin.com/in/isham-rashik-5a547711b/",
+      "github": "https://github.com/di37",
+      "google_scholar": "",
+      "portfolio": ""
+    }
+  },
+  "professional_summary": {
+    "specialization": "Data Scientist",
+    "years_of_ml_experience": "5+",
+    "core_technical_strengths": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "Computer Vision"
+    ],
+    "industry_domains": [
+      "Finance",
+      "Telecommunications",
+      "Sustainability",
+      "Information Technology"
+    ],
+    "notable_achievements": [
+      "Top Artificial Intelligence, Machine Learning, and Data Science Voice on LinkedIn - August 2023-February 2024",
+      "Secured Excellent Performance in Etisalat-Tamdeed Projects - 2020",
+      "Awarded with Honours of the First Class in Electrical and Electronic Engineering (EEE)"
+    ]
+  },
+  "technical_skills": {
+    "ml_expertise": {
+      "frameworks_libraries": [
+        "PyTorch",
+        "TensorFlow",
+        "Keras",
+        "Scikit-Learn"
+      ],
+      "deep_learning": [
+        "HuggingFace Transformers",
+        "VITs Algorithm",
+        "ResNet50"
+      ],
+      "mlops_tools": [
+        "MLFlow",
+        "Docker",
+        "FastAPI"
+      ],
+      "cloud_platforms": [
+        "AWS"
+      ],
+      "experiment_tracking": [
+        "MLFlow"
+      ],
+      "model_optimization": [
+        "Prompt Engineering",
+        "LoRA Training"
+      ]
+    },
+    "data_processing": {
+      "programming_languages": [
+        "Python",
+        "C",
+        "C++",
+        "JavaScript"
+      ],
+      "big_data_tools": [],
+      "databases": [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Neo4j"
+      ],
+      "visualization": [
+        "Plotly",
+        "Seaborn",
+        "Tableau"
+      ]
+    },
+    "domain_knowledge": {
+      "industries": [
+        "Finance",
+        "Telecommunications",
+        "Sustainability",
+        "Information Technology"
+      ],
+      "problem_types": [
+        "NLP",
+        "Computer Vision",
+        "Classification",
+        "Time Series Analysis"
+      ],
+      "research_areas": [
+        "Natural Language Processing",
+        "Computer Vision"
+      ]
+    }
+  },
+  "work_experience": [
+    {
+      "company": "VBRL Holdings Inc",
+      "title": "Data Scientist",
+      "duration": {
+        "start_date": "2024-01",
+        "end_date": "Present"
+      },
+      "location": "Dubai, UAE",
+      "team_size": "",
+      "projects": [
+        {
+          "name": "LLM Fine-Tuning for SPARQL Queries",
+          "problem_statement": "Fine-tuning a LLM for generating SPARQL queries for web and mobile devices.",
+          "technologies": [
+            "Mistral 7B",
+            "Llama 3.1",
+            "Falcon 2",
+            "Mixtral"
+          ],
+          "dataset_details": "Pairs of natural language prompts and SPARQL queries.",
+          "models_used": [
+            "Mistral 7B",
+            "Llama 3.1",
+            "Falcon 2",
+            "Mixtral"
+          ],
+          "metrics_achieved": {},
+          "deployment_details": "Streaming chatbot developed on Streamlit.",
+          "business_impact": ""
+        },
+        {
+          "name": "Automated Pipeline for Neo4J",
+          "problem_statement": "Transforming text, PDF, and CSV files into Neo4J graph database structures.",
+          "technologies": [
+            "Neo4J",
+            "OpenAI API"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "",
+          "business_impact": ""
+        },
+        {
+          "name": "LoRA Training of Flux Dev",
+          "problem_statement": "Text to Image Generation model for a character mascot.",
+          "technologies": [
+            "OpenAI API",
+            "ComfyUI"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "",
+          "business_impact": ""
+        }
+      ],
+      "research_contributions": []
+    },
+    {
+      "company": "Spotnik Technology",
+      "title": "Freelance Data Scientist",
+      "duration": {
+        "start_date": "2023-08",
+        "end_date": "2023-11"
+      },
+      "location": "Dubai, UAE",
+      "team_size": "",
+      "projects": [
+        {
+          "name": "Urban Zone Enhancement",
+          "problem_statement": "Enhancing pedestrian walkability, happiness, and sustainability scores.",
+          "technologies": [
+            "MageAI",
+            "MLFlow",
+            "Terraform",
+            "FastAPI"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "Deployed on AWS EC2 instances.",
+          "business_impact": ""
+        }
+      ],
+      "research_contributions": []
+    },
+    {
+      "company": "NewsReels Information Technology",
+      "title": "Data Scientist",
+      "duration": {
+        "start_date": "2022-07",
+        "end_date": "2023-11"
+      },
+      "location": "Dubai, UAE",
+      "team_size": "",
+      "projects": [
+        {
+          "name": "Text to Speech and Speech to Text Models",
+          "problem_statement": "Developing TTS and STT models for English and Hindi languages.",
+          "technologies": [
+            "VITs Algorithm",
+            "Whisper",
+            "BERT",
+            "SpaCy"
+          ],
+          "dataset_details": "50-hours each English and Hindi datasets for TTS; 100-hours for STT.",
+          "models_used": [
+            "VITs",
+            "Whisper"
+          ],
+          "metrics_achieved": {
+            "WER": "12%"
+          },
+          "deployment_details": "",
+          "business_impact": ""
+        },
+        {
+          "name": "ETL Engine Development",
+          "problem_statement": "Streamlining data integration with ETL pipelines.",
+          "technologies": [
+            "MongoDB",
+            "Docker",
+            "FastAPI"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "",
+          "business_impact": ""
+        }
+      ],
+      "research_contributions": []
+    },
+    {
+      "company": "Etisalat Service Holdings - Tamdeed Projects",
+      "title": "Technical Support Specialist",
+      "duration": {
+        "start_date": "2019-06",
+        "end_date": "2022-07"
+      },
+      "location": "Dubai, UAE",
+      "team_size": "",
+      "projects": [
+        {
+          "name": "Employee Turnover Prediction",
+          "problem_statement": "Predicting employee turnover using machine learning.",
+          "technologies": [
+            "Sklearn",
+            "Pandas",
+            "NumPy"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "",
+          "business_impact": ""
+        },
+        {
+          "name": "Predictive Maintenance Model",
+          "problem_statement": "Predicting maintenance needs for splicing machines.",
+          "technologies": [
+            "Sklearn",
+            "Pandas",
+            "NumPy"
+          ],
+          "dataset_details": "",
+          "models_used": [],
+          "metrics_achieved": {},
+          "deployment_details": "",
+          "business_impact": ""
+        }
+      ],
+      "research_contributions": []
+    }
+  ],
+  "research_publications": {
+    "papers": [],
+    "patents": [],
+    "blog_posts": [],
+    "conference_presentations": []
+  },
+  "projects": [
+    {
+      "name": "YouTube Notes Generator",
+      "timeline": "",
+      "category": "NLP",
+      "dataset_details": "",
+      "methodology": "Converts YouTube links into high-quality notes using Prompt Engineering and Gemini-1.5-Pro.",
+      "technologies": [
+        "Prompt Engineering",
+        "Gemini-1.5-Pro"
+      ],
+      "results": "",
+      "github_link": "https://github.com/di37/youtube-notes-generator"
+    },
+    {
+      "name": "Multipdf Arabic Chatbot",
+      "timeline": "",
+      "category": "NLP",
+      "dataset_details": "",
+      "methodology": "Question-and-answer system for Arabic documents using multilingual-e5-large-instruct.",
+      "technologies": [
+        "GPT-4-Turbo"
+      ],
+      "results": "",
+      "github_link": ""
+    },
+    {
+      "name": "Personal Code Assistant",
+      "timeline": "",
+      "category": "NLP",
+      "dataset_details": "",
+      "methodology": "Personal code assistant using Codellama, Ollama, Langchain, and Streamlit.",
+      "technologies": [
+        "Codellama",
+        "Ollama",
+        "Langchain",
+        "Streamlit"
+      ],
+      "results": "",
+      "github_link": "https://github.com/di37/coding-assistant-codellama-streamlit"
+    },
+    {
+      "name": "Multimodal Question and Answer Application",
+      "timeline": "",
+      "category": "NLP",
+      "dataset_details": "",
+      "methodology": "Allows user to drag and drop picture and video, and ask questions.",
+      "technologies": [
+        "Streamlit",
+        "Gemini Pro API"
+      ],
+      "results": "",
+      "github_link": "https://github.com/di37/gemini-pro-vision-streamlit-application"
+    },
+    {
+      "name": "Instruction Tuning of Flan-T5-Large",
+      "timeline": "",
+      "category": "NLP",
+      "dataset_details": "",
+      "methodology": "Instruction tuned Flan-T5-large model for dialogue summarization.",
+      "technologies": [
+        "Flan-T5-Large"
+      ],
+      "results": "",
+      "github_link": "https://www.kaggle.com/code/disham993/fine-tune-a-generative-ai-model-for-dialogue-summ"
+    },
+    {
+      "name": "Anime Protagonist Classifier",
+      "timeline": "",
+      "category": "Computer Vision",
+      "dataset_details": "",
+      "methodology": "Fine-tuned a Resnet50 model to classify anime main protagonists.",
+      "technologies": [
+        "FastAI",
+        "Gradio"
+      ],
+      "results": "",
+      "github_link": "https://huggingface.co/spaces/disham993/anime_protagonist_classifier"
+    }
+  ],
+  "education": [
+    {
+      "degree": "BEng. in Electrical and Electronics Engineering",
+      "institution": "Heriot-Watt University, Dubai",
+      "graduation_year": "",
+      "specialization": "",
+      "thesis": "",
+      "relevant_coursework": [],
+      "research_work": "",
+      "gpa": "3.92/4.00"
+    },
+    {
+      "degree": "Masters of Business Administration - Finance and Operations Management",
+      "institution": "Manipal Academy of Higher Education, Dubai",
+      "graduation_year": "",
+      "specialization": "",
+      "thesis": "",
+      "relevant_coursework": [],
+      "research_work": "",
+      "gpa": "8.64/10.00"
+    }
+  ],
+  "certifications": []
+}
