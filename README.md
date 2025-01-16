@@ -123,7 +123,7 @@ conda activate scout-sense
 
 2. Start the Streamlit server:
 ```bash
-streamlit run src/main.py
+python main.py
 ```
 
 3. Open your web browser and navigate to:
