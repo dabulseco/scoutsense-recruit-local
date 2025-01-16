@@ -1,4 +1,4 @@
-# 🎯 Scout Sense - Resume Rater
+# 🎯 Scout Sense Recruit - Resume Rater
 
 An AI-powered talent matching and interview preparation platform that analyzes resumes against job descriptions to provide compatibility scores and generate tailored interview questions.
 
@@ -92,8 +92,8 @@ Configure model parameters through:
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd scout-sense
+git clone https://github.com/di37/scoutsense-recruit
+cd scoutsense-recruit
 ```
 
 2. Create and activate a conda environment:
@@ -178,7 +178,7 @@ http://localhost:8501
 ## 🛠️ Technologies Used
 
 - Streamlit
-- OpenAI GPT-4O Series
+- OpenAI GPT-4o Series
 - Google Gemini Series
 - PyPDF2
 - python-docx
