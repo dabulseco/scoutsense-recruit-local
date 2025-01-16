@@ -1,15 +1,12 @@
 import subprocess
 import sys
 import os
-from pathlib import Path
 
 def run_app():
     try:
-        # Get the current directory where app.py is located
-        current_dir = Path(__file__).parent.absolute()
         
         # Construct path to the Streamlit app
-        streamlit_app = str(current_dir / 'src/main.py')
+        streamlit_app = os.path.join("src", "main.py")
         
         # Set up environment variables if needed
         env = os.environ.copy()

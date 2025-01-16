@@ -50,10 +50,10 @@ models:
 
 # Streamlit UI Configuration
 ui:
-  title: "🎯 Scout Sense - Resume Rater"
+  title: "🎯 Scout Sense Recruit - Resume Rater"
   description: "AI-powered talent matching and interview preparation platform"
   page_config:
-    page_title: "Scout Sense - Resume Rater"
+    page_title: "Scout Sense Recruit - Resume Rater"
     page_icon: "🎯"
     layout: "centered"
   sidebar:
