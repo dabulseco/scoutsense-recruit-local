@@ -1,0 +1,100 @@
+# AI Models Configuration
+models:
+  gpt4o:
+    display_name: "GPT-4o"
+    model_id: "gpt-4o"
+    temperature: 0.7
+    max_tokens: 2048
+    system_role: "You are an expert HR professional and technical interviewer."
+
+  gpt4o_mini:
+    display_name: "GPT-4o-mini"
+    model_id: "gpt-4o-mini"
+    temperature: 0.7
+    max_tokens: 2048
+    system_role: "You are an expert HR professional and technical interviewer."
+
+  gemini_15_pro:
+    display_name: "Gemini 1.5 Pro"
+    model_id: "gemini-1.5-pro"
+    temperature: 0.7
+    top_p: 1
+    top_k: 1
+    max_output_tokens: 2048
+    safety_settings:
+      - category: "HARM_CATEGORY_HARASSMENT"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_HATE_SPEECH"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_DANGEROUS_CONTENT"
+        threshold: "BLOCK_NONE"
+
+  gemini_15_flash:
+    display_name: "Gemini 1.5 Flash"
+    model_id: "gemini-1.5-flash"
+    temperature: 0.7
+    top_p: 1
+    top_k: 1
+    max_output_tokens: 2048
+    safety_settings:
+      - category: "HARM_CATEGORY_HARASSMENT"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_HATE_SPEECH"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+        threshold: "BLOCK_NONE"
+      - category: "HARM_CATEGORY_DANGEROUS_CONTENT"
+        threshold: "BLOCK_NONE"
+
+# Streamlit UI Configuration
+ui:
+  title: "🎯 Scout Sense - Resume Rater"
+  description: "AI-powered talent matching and interview preparation platform"
+  page_config:
+    page_title: "Scout Sense - Resume Rater"
+    page_icon: "🎯"
+    layout: "centered"
+  sidebar:
+    config_header: "⚙️ Configuration"
+    api_section: "🔑 API Keys"
+    model_section: "🤖 Model Settings"
+    update_button: "💾 Update Settings"
+  main:
+    upload_section: "📄 Resume Upload"
+    url_section: "🔗 Job Description URL"
+    analyze_button: "🔍 Analyze Resume"
+    results:
+      score: "📊 Score"
+      feedback: "💡 Feedback"
+      questions: "❓ Interview Questions"
+      levels:
+        easy: "🟢 Easy Questions"
+        intermediate: "🟡 Intermediate Questions"
+        difficult: "🟠 Difficult Questions"
+        extremely_difficult: "🔴 Extremely Difficult Questions"
+
+# Scoring Configuration
+scoring:
+  thresholds:
+    high: 7
+    medium: 5
+  colors:
+    high: "green"
+    medium: "orange"
+    low: "red"
+
+# File Processing
+file_types:
+  allowed:
+    - pdf
+    - docx
+  mime_types:
+    pdf: "application/pdf"
+    docx: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+# Web Scraping
+scraping:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  timeout: 30
