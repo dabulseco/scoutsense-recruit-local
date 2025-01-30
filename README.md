@@ -2,6 +2,8 @@
 
 An AI-powered talent matching and interview preparation platform that analyzes resumes against job descriptions to provide compatibility scores and generate tailored interview questions.
 
+In this fork we will focus on getting this to work on local LLM models.
+
 ## Project Structure
 
 ```
